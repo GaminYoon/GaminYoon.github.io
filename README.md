@@ -1,1 +1,0 @@
-# GaminYoon.github.io
