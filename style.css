@@ -71,6 +71,10 @@ nav ul li a:hover::after{
   display: none;
 }
 
+h1 {
+  margin: auto;
+}
+
 /*for responsive menu*/
 @media screen and (max-width:800px){
   nav ul li{display:block;} /*make a menu items vertical*/
