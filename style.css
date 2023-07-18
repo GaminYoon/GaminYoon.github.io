@@ -16,6 +16,12 @@ body{
   padding: 10px 10%;
 }
 
+#imgHeader{
+  width: 100%;
+  height: 100px;
+  background-image: url(.\image\code\watches.jpg);
+}
+
 nav{
   display: flex;
   align-items: center;
