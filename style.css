@@ -19,7 +19,7 @@ body{
 #imgHeader{
   width: 100%;
   height: 100px;
-  background-image: url(.\image\code\watches.jpg);
+  background-image: url(image/code/watches.jpg);
 }
 
 nav{
