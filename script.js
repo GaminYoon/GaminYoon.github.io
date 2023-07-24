@@ -19,6 +19,7 @@ function show(pgno){ //function to show selected page no
   let onepage=document.querySelector("#page"+pgno);
   //show the page
   onepage.style.display="block";
+  onepage.style.transition="all 2s";
 }
 
 /*Listen for clicks on the buttons, assign anonymous
@@ -41,6 +42,8 @@ sidebar.addEventListener("click",openMenus);
 const csidebar=document.querySelector("#closeMenu");
 function openMenus(){ /*open and close menu*/
   menuItemsList.style.right= "0";
+  menuItemsList.style.transition=" all 2s";
+
 
 }//can optimize using toggle class with css transitions
 const menuItemsList=document.querySelector("nav ul");
@@ -49,5 +52,7 @@ const menuItemsList=document.querySelector("nav ul");
 csidebar.addEventListener("click",closeMenus);
 function closeMenus(){ /*open and close menu*/
   menuItemsList.style.right= "-200px";
+  menuItemsList.style.transition="all 2s";
+
 
 }//can optimize using toggle class with css transitions
