@@ -625,6 +625,8 @@ h4{
 
 /*for responsive menu*/
 @media screen and (max-width:800px){
+
+
   nav ul li{display:block;} /*make a menu items vertical*/
   #openMenu{display: block;} /* unhide menu icon */
   #closeMenu{
@@ -772,23 +774,29 @@ h4{
 
 .main3{
   height: 1300px;
+  width: 100%;
   display: block;
+  margin: auto;
 }
 
 
 .watch {
   height: 300px;
-  margin: 20px;
+  margin: 10px 0;
+  padding-left: 70px;
 }
 
 .front {
-  width: 300px;
+  
   height: 100%;
+
 }
 
 .frontimg{
-  top: 10px;
-  left: 110px;
+  top: 20px;
+  left: 180px;
 }
+
+
 
 }
