@@ -34,8 +34,6 @@ page3btn.addEventListener("click", function () {
   show(3);
 });
 
-
-
 /*for Opening sidebar */
 const sidebar=document.querySelector("#openMenu");
 sidebar.addEventListener("click",openMenus);
