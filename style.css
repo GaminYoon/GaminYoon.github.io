@@ -17,13 +17,19 @@ body{
   opacity: 1;
 }
 
-#imgHeader{
+#imgHeader #header1{
   width: 100%;
   height: 800px;
   background-image: url(image/code/watches.jpg);
   background-size: cover;
   background-position: center;
   opacity: 0.5;
+}
+
+#imgHeader h1{
+  position: absolute;
+  top: 650px;
+  left: 1200px;
 }
 
 nav{
@@ -86,7 +92,6 @@ nav ul li a:hover::after{
   align-items: center;
   justify-content: center;
   margin: 40px 0px;
-
 }
 
 .titleImg {
@@ -136,16 +141,15 @@ nav ul li a:hover::after{
 
 /* Brands Section*/
 .WatchSec {
-  margin: 10px 0;
-  width: 100%;
-  background-color: #0F0F0F;
+  margin: 20px auto;
+  width: 80%;
+  /*background-color: #0F0F0F;*/
 }
 
 h4{
   margin-bottom:20px;
   text-align: center;
   font-size: 42px;
-
 }
 
 .brands{
@@ -181,21 +185,203 @@ h4{
 .brands img{
   width: 100%;
   height: 100%;
-  padding: auto;
 }
 
-.main2 {
+
+
+
+/*Image Slider*/
+.WatchSlides{
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main2{
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align:center;
+  height: 200px;
+  display: flex;
+}
+
+.main2 input{
+  display: none;
+}
+
+.img1{
+  width: 100%;
+  transition: 2s;
 }
 
 .img1 img {
-  width: 40%;
+
+  height: 200%;
   margin: 10px auto;
 }
 
+.autoNav{
+  position: absolute;
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.autoNav div{
+  border: 2px solid wheat;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.autoNav div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -100%;
+}
+  
+
+#radio3:checked ~ .first{
+  margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -300%;
+}
+
+#radio1:checked ~ .autoNav .auto-btn1{
+  background: wheat;
+}
+#radio2:checked ~ .autoNav .auto-btn2{
+  background: wheat;
+}
+#radio3:checked ~ .autoNav .auto-btn3{
+  background: wheat;
+}
+#radio4:checked ~ .autoNav .auto-btn4{
+  background: wheat;
+}
+
+/*Tips Sec*/
+.WatchTips{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.main3{
+  font-size: 42px;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-left: 50px;
+  display: inline-flex;
+  
+
+}
+
+.main3 p{
+  font-size: 20px;
+  padding-top: 70px;
+}
+
+
+
+.watch {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.front {
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  
+  transition: transform 0.5s;
+}
+
+
+
+.back{
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.watch h3{
+  
+  padding-top: 120px;
+}
+
+#watch2 .front {
+  background-image: url(image/code/display1.jpg);
+  background-position: center;
+  opacity: 0.5;
+
+}
+#watch3 .front{
+  background-image: url(image/code/under.jpg);
+  background-position: center;
+  opacity: 0.5;
+}
+
+#watch1 .front{
+  background-image: url(image/code/clean.jpg);
+  background-position: center;
+  opacity: 0.5;
+}
+
+#watch4 .front{
+  background-image: url(image/code/straps.jpeg);
+  background-position: center;
+  opacity: 0.5;
+}
+.frontimg{
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  font-size: 18px;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.front {
+  background-color: #333333;
+}
+
+.back {
+  color: white;
+  background-color: #333333;
+  transform: rotateY(180deg);
+}
+/*About Us*/
+.AboutSec{
+  margin: 20px auto;
+  width: 100%;
+  
+}
+
+.main4{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
 
 /*Code Image*/
 .code{
@@ -211,9 +397,6 @@ h4{
   text-align: center;
 }
 
-.img2 img{
-  width: 20%;
-}
 
 .titleImg2 {
   width: 500px;
@@ -240,7 +423,7 @@ h4{
 }
 
 .titleImg2 img{
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: auto;
   display: block;
@@ -259,6 +442,185 @@ h4{
   transform: translateX(-550px);
   transition: 2.0s ease;
 }
+
+.titleImg3 {
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.titleImg3 h1{/*The text will overlap the image*/
+  top: 140px;
+  left: 180px;
+  position: absolute;
+}
+
+.titleImg3 img{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  opacity: 0.5;
+}
+
+.titleImg3:hover  {
+  transform: translateX(-250px);
+  transition: 2.0s ease;
+}
+
+.titleImg3:hover .headText {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(550px);
+  transition: 2.0s ease;
+}
+
+.iconic {
+  width: 100%;
+  height: 500px;
+
+}
+
+#main5 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.details {
+  width: 50%;
+  height: 300px;
+  background: #28282B;
+  position: absolute;
+  border-radius: 10px;
+}
+.details p {
+  padding-top: 20px;
+  
+}
+/*page 3*/
+.final{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.final-cont{
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+  margin-left: 50px;
+  display: inline-flex;
+  justify-content: center;
+  
+}
+
+.watchRow1{
+  width: 100%;
+  height: 400px;
+  padding: 50px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.function1{
+  width: 600px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-color: #28282B;
+  
+  transition: transform 0.5s;
+}
+
+.functionb{
+  width: 600px;
+  height: 80%;
+  position: absolute;
+  top: 55px;
+
+  transition: transform 0.5s;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.functionb p {
+  padding-top: 50px;
+}
+
+.functionb {
+  color: white;
+  background-color: #333333;
+  transform: rotateY(180deg);
+}
+
+.frontText{
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  font-size: 18px;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+#myWatch2 .function1 {
+  background-image: url(image/code/digital.jpg);
+  background-position: center;
+  opacity: 0.5;
+
+}
+#myWatch3 .function1{
+  background-image: url(image/code/chrono.jpg);
+  background-position: center;
+  opacity: 0.5;
+}
+
+#myWatch1 .function1{
+  background-image: url(image/code/analogue.jpg);
+  background-position: center;
+  opacity: 0.5;
+}
+
+#myWatch4 .function1{
+  background-image: url(image/code/hybrid.jpg);
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+
+/*Contact Sec*/
+.ContactSec{
+  width:100%;
+  height: 100px;
+}
+
+#contact{
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e0f;
+  text-align: center;
+}
+
+#contact h4{
+  font-size: 15px;
+}
+
+
+
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  background-color: #28282B;
+}
+
 
 /*for responsive menu*/
 @media screen and (max-width:800px){

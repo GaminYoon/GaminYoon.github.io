@@ -10,7 +10,7 @@
     <!--Navigation Bar Section----->
     <div class="wtitle">
       <nav>
-        <h2 class="navt"><span><i>W</i></span>atches</h2>
+        <h2 class="navt"><span>KC</h2>
         <ul id="sidebar">
           <li><a id="link1" class="active" href="#">Watches</a></li>
           <li><a id="link2" href="#">Watches By Movements</a></li>
@@ -21,11 +21,50 @@
       </nav>
     </div>
     <div id="imgHeader">
-
+      <div id="header1"></div>
+      <h1>"Time Transcended, <br>&nbsp;&nbsp;&nbsp;Elegance Embraced" <br>&nbsp;&nbsp;&nbsp;&nbsp; - Said Some wise man</h1>
     </div>
     <!--Insert Watch Image as Header----->
     <div id="pagecontainer">
       <div class="page" id="page1">
+
+        <!--image slider for watch-->
+        <h4>Watch Collection</h4>
+        <div class="WatchSlides">
+          <div class="main2">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="img1 first">
+              <img src=".\image\code\edifice.jpg" alt="#">
+              
+            </div>
+            <div class="img1">
+              <img src=".\image\code\Seiko5C.jpg" alt="#">
+              
+            </div>
+            <div class="img1">
+              <img src=".\image\code\casioak.jpg" alt="#">
+              
+            </div>
+            <div class="img1">
+              <img src=".\image\code\presage.jpg" alt="#">
+              
+            </div>
+
+            <div class="autoNav">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+
+          </div>
+        </div>
+
         <!--Brief Description of Watches----->
         <div class="headimg">
 
@@ -40,6 +79,7 @@
             </div>
           </div>
         </div>
+        
         <!--Brands Section-->
         <div class="WatchSec">
           <div class="main">
@@ -54,27 +94,49 @@
             </div>
           </div>
         </div>
-        <div class="WatchSec">
-          <div class="main2">
-            <h4>Watch Collection</h4>
-            <div class="img1">
-              <img src=".\image\code\edifice.jpg" alt"#">
-              <p>Casio Edifice</p>
+        <div class="WatchTips">
+          <h4>Watch Tips</h4>
+          <div class="main3">
+           
+            <div class="watch" id="watch1" onclick="flipWatch(this)">
+              <div class="front"></div>
+              <div class="frontimg"><h3>Cleaning</h3></div>
+              <div class="back"><p>Use a soft, damp cloth to gently wipe the case, crystal, and bracelet (if applicable).<br>
+                 Avoid using chemicals, solvents, or abrasive materials that could damage the finish.</p></div>
             </div>
-            <div class="img1">
-              <img src=".\image\code\Seiko5C.jpg" alt"#">
-              <p>Seiko 5</p>
+            <div class="watch"id="watch2" onclick="flipWatch(this)">
+              <div class="front"></div>
+              <div class="frontimg"><h3>Wear</h3></div>
+              <div class="back"><p>Regularly wearing your watch helps keep the movement lubricated and prevents stagnant oils.<br> 
+                Mechanical and automatic watches benefit from consistent use.</p></div>
             </div>
-            <div class="img1">
-              <img src=".\image\code\casioak.jpg" alt"#">
-              <p>G-Shock Casioak</p>
+            <div class="watch"id="watch3" onclick="flipWatch(this)">
+              <div class="front"></div>
+              <div class="frontimg"><h3>Water</h3></div>
+              <div class="back"><p>Unless your watch is specifically designed for water activities,<br>
+                 avoid exposing it to water, especially hot water (like showers and saunas).<br>
+                  Water can damage the movement and seals.</p></div>
             </div>
-            <div class="img1">
-              <img src=".\image\code\presage.jpg" alt"#">
-              <p>Seiko Presage</p>
+            <div class="watch"id="watch4" onclick="flipWatch(this)">
+              <div class="front"></div>
+              <div class="frontimg"><h3>Straps</h3></div>
+              <div class="back"><p>Leather straps should be kept away from water and excessive moisture to prevent deterioration.<br>
+                 Clean leather straps with a damp cloth and allow them to air dry.<br>
+                  Metal bracelets can be cleaned with warm, soapy water and a soft brush</p></div>
             </div>
           </div>
         </div>
+        <div class="AboutSec">
+          <div class="main4">
+            <div>
+              <h4>About Us</h4>
+              <p>Welcome to KnowledgeChronos, where time meets education in the most elegant way.<br>
+                We are passionate about combining the artistry of fine watchmaking with the pursuit of knowledge,<br>
+                 creating a unique and enriching experience for watch enthusiasts and lifelong learners alike.
+            </div>
+          </div>
+        </div>
+        
         <!--Add Images Like Text on images----->
         <!--Game Interactivity for watch----->
       </div>
@@ -84,8 +146,8 @@
 
         <div class="headimg">
 
-          <div class="titleImg" >
-            <img src=".\image\code\mechanical.jpg">
+          <div class="titleImg3" >
+            <img src=".\image\code\mechanical.jpg" alt="#">
             <h1>Mechanical</h1>
 
             <div class="headText">
@@ -101,9 +163,8 @@
         </div>
 
         <div class="headimg">
-
           <div class="titleImg2" >
-            <img src=".\image\code\automatic.jpg">
+            <img src=".\image\code\automatic.jpg" alt="#">
             <h1>Automatic</h1>
 
             <div class="headText2">
@@ -121,8 +182,8 @@
 
         <div class="headimg">
 
-          <div class="titleImg" >
-            <img src=".\image\code\Quartz.jpg">
+          <div class="titleImg3" >
+            <img src=".\image\code\Quartz.jpg" alt="#">
             <h1>Quartz</h1>
 
             <div class="headText">
@@ -141,7 +202,7 @@
         <div class="headimg">
 
           <div class="titleImg2" >
-            <img src=".\image\code\solar.jpg">
+            <img src=".\image\code\solar.jpg" alt="#">
             <h1>Solar</h1>
 
             <div class="headText2">
@@ -158,20 +219,107 @@
         <!--What is Automatic Watches----->
         <!--Images of automatic Watches----->
 
+        <div class="iconic">
+          <h4>Choosing The Right Movement</h4>
+          <div id="main5" onclick="reveal()">
+            <div class="details" id="view1">
+              <h4>Accuracy & Precision:</h4>
+              <p><b>Quartz Movement</b>: Quartz watches are known for their exceptional accuracy.
+                      If you prioritize precision and want a watch that keeps time reliably,
+                      a quartz movement might be your best bet.</p>
+              <p><b>Automatic and Mechanical Movements</b>: These movements are slightly less accurate than quartz but are valued 
+                for their traditional craftsmanship and charm.<br>If a minor variation in timekeeping is acceptable, 
+                mechanical or automatic movements can be a great choice.</p>
+            </div>
+            <div class="details" id="view2">
+              <h4>Maintenance and Convenience:</h4>
+              <p><b>Quartz Movement</b>: Quartz watches require minimal maintenance. The battery typically needs to be replaced every 1-2 years.</p>
+              <p><b>Automatic and Mechanical Movements</b>These movements require more maintenance. Mechanical watches need regular winding,
+                 while automatic watches require consistent wear or a watch winder to keep them running.</p>
+            </div>
+            <div class="details" id="view3">
+              <h4>Budget:</h4>
+              <p><b>Quartz Movement</b>: Quartz watches are often more affordable due to their simpler construction.</p>
+              <p><b>Automatic and Mechanical Movements</b>: Mechanical and automatic watches tend to be more expensive due to the intricate craftsmanship involved.</p>
+            </div>
+            <div class="details" id="view4">
+              <h4>Personal Preference:</h4>
+              <p>Ultimately, the choice of movement should align with your personal preferences. <br>
+                Consider the aesthetics, emotional connection, and the story behind the movement type that resonates with you.</p>
+            </div>
+          </div>
+          
+        </div>
+
       </div>
       <div class="page" id="page3">
         <!--Brief Description of Quartz Watches----->
-        <h1>Watches By Functionality</h1>
+        
+        <div class="final">
+          <h1>Watches By Functionality</h1>
+          <div class="final-cont">
+           <div class="first-row">
+              <div class="watchRow1" id="myWatch1" onclick="flip(this)">
+                <div class="function1"></div>
+                <div class="frontText"><h3>ANALOGUE </h3></div>
+                <div class="functionb"><p>There are analogue timepieces for every price range that have a classic clock face and a three-hand movement. Analogue watches, as opposed to digital watches,<br>
+                   which count down the seconds and solely display the current time, display the time through hands on a dial,<br>
+                    typically at intervals of five minutes. You might also see the date or the day of the week on these hands. Analogue watches are notable for being a<br>
+                     representative of the old and classic aspect of timepieces. They are also ideal for wearing to formal events. </p></div>
+              </div>
+              <div class="watchRow1"id="myWatch2" onclick="flip(this)">
+                <div class="function1"></div>
+                <div class="frontText"><h3>DIGITAL </h3></div>
+                <div class="functionb"><p>Digital watches show the passing of time in numerical digits and frequently include functions like a GPS, pedometer,<br>
+                   and other things. They are mechanically devoid and rely on an electrical circuit to power the LEDs or LCDs that display the time.<br>
+                    Digital watches are unique in that they have an electronic display.<br>The beautiful thing about digital watches is that they come in a wide range of price points as well.
+                    They are also ideal for business attire and athletic activities. </p></div>
+              </div>
+            </div>
+            <div class="second-row">
+    
+              <div class="watchRow1" id="myWatch3" onclick="flip(this)">
+                <div class="function1"></div>
+                <div class="frontText"><h3>CHRONOGRAPH </h3></div>
+                <div class="functionb"><p>The faces of chronograph watches have subdials. A tachymeter, which is a scale inscribed around the rim of a watch, is frequently seen on these subdials.<br>
+                   It is employed to gauge speed over a predetermined distance. Subdials frequently have additional complexities and features,<br>
+                    like as stopwatches, tachymeters, and others. Anyone can own a chronograph because they come in a variety of various designs and price points. </p></div>
+              </div>
+        
+              <div class="watchRow1" id="myWatch4" onclick="flip(this)">
+                <div class="function1"></div>
+                <div class="frontText"><h3>HYBRID </h3></div>
+                <div class="functionb"><p>Combinations of analogue and digital are found in hybrid watches. Because they mix digital elements with conventional watch mechanics,<br>
+                   they provide functionality that is comparable to smartwatches. They provide timepieces for every price range and are excellent for sports and fitness. </p></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
         <!--What is Quartz Watches----->
         <!--Types of Quartz Watches----->
       </div>
+
+      <div class="code">
+        <img src= ".\image\code\frame.png" alt="#">
+      <div>
+
+      <footer>
+        <div class="ContactSec">
+          <div id="contact">
+            <h4>Sign up for our news letter</h4>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <input type="submit">
+          </div>
+        </div>
+      </footer>
     </div>
+   
 
-
-    <div class="code">
-      <img src= ".\image\code\frame.png" alt"#">
-    <div>
-
+  
+    <div class="copyright">
+      <p>Copyright &copy; Sukhairee</p>
+    </div>
 
     <script src="script.js"></script>
   </body>
