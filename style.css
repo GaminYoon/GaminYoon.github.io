@@ -29,7 +29,11 @@ body{
 #imgHeader h1{
   position: absolute;
   top: 650px;
-  left: 1200px;
+  left: 0px;
+}
+
+.headText3{
+  display: none;
 }
 
 nav{
@@ -175,13 +179,7 @@ h4{
 }
 
 
-.brands .wBrand:hover {
-  background: white;
-  color: black;
-  opacity: 0.7;
-  transform: rotateY(360deg);
-  transition: 2.0s ease;
-}
+
 
 .brands img{
   width: 100%;
@@ -273,6 +271,9 @@ h4{
   margin: 20px auto;
   width: 100%;
   text-align: center;
+  overflow: hidden;
+  height: 1200px;
+  
 }
 
 .main3{
@@ -280,9 +281,11 @@ h4{
   text-align: center;
   width: 100%;
   height: 500px;
-  margin-left: 50px;
+  margin-left: 20px;
   display: inline-flex;
-  
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
 
 }
 
@@ -298,6 +301,8 @@ h4{
   height: 400px;
   perspective: 1000px;
   position: relative;
+  margin: 200px 50px;
+
 }
 
 .front {
@@ -504,6 +509,7 @@ h4{
   margin: 20px auto;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
 .final-cont{
@@ -736,14 +742,6 @@ h4{
 }
 
 
-.brands .wBrand:hover {
-  background: white;
-  color: black;
-  opacity: 0.7;
-  transform: rotateY(360deg);
-  transition: 2.0s ease;
-}
-
 
 
 /*Tips Sec*/
@@ -752,29 +750,98 @@ h4{
 }
 
 .main3{
+  display: block;
   height: 1300px;
   width: 100%;
-  display: block;
 }
 
 
 .watch {
   height: 300px;
   margin: 10px auto;
-  padding: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
 }
 
 .front {
- 
-  
   height: 100%;
-
 }
 
 .frontimg{
   top: 20px;
-  left: 180px;
+  left: 120px;
+}
+
+/*page 3*/
+
+.final{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.final-cont{
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  height: 1800px;
+  margin-left: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.watchRow1{
+  width: 100%;
+  height: 400px;
+  padding: 50px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.function1{
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-color: #28282B;
+  
+  transition: transform 0.5s;
+}
+
+.functionb{
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 55px;
+
+  transition: transform 0.5s;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.functionb p {
+  padding-top: 50px;
+}
+
+.functionb {
+  color: white;
+  background-color: #333333;
+  transform: rotateY(180deg);
+}
+
+.frontText{
+  position: static;
+  text-align: center;
+  font-size: 18px;
 }
 
 

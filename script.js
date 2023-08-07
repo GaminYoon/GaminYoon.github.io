@@ -1,4 +1,4 @@
-//target all elements to save to constants
+
 const page1btn=document.querySelector("#link1");
 const page2btn=document.querySelector("#link2");
 const page3btn=document.querySelector("#link3");
@@ -62,7 +62,7 @@ setInterval(function(){
   if(counter > 4){
     counter = 1;
   }
-}, 5000)
+}, 5000);
 
 
 
@@ -84,7 +84,7 @@ function flipWatch(element) {
     watchElement3.style.transform = "rotateY(0deg)";
   }
 
-};
+}
 
 var view = document.getElementById("view1")
 var view2 = document.getElementById("view2")
@@ -118,7 +118,7 @@ function reveal() {
     view.style.visibility = "visible";
   }
 
-};
+}
 
 function flip(element) {
   var myElement = element.querySelector('.function1');
@@ -137,7 +137,7 @@ function flip(element) {
     myElement2.style.transform = "rotateY(0deg)";
   }
 
-};
+}
 
 
 
